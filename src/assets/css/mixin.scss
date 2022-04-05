@@ -1,0 +1,21 @@
+@mixin fb($w) {
+  flex-basis: $w;
+  width: $w;
+  max-width: $w;
+}
+
+@mixin bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$violet: #6c5dd3;
+$orange: #ff754c;
+$black: #11142d;

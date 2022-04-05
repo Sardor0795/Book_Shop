@@ -1,0 +1,33 @@
+@import "../../assets/css/mixin.scss";
+
+.advan{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    &__img{
+        width: 60px;
+        height: 60px;
+        border-radius: 14px;
+        background-color: #F0EEFF;
+        @include center;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__info{
+        flex: 1;
+        padding-left: 25px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 24px;
+        color: $black;
+    }
+    &__text{
+        color: #aaaaaa;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

@@ -1,0 +1,109 @@
+@import "../../assets/css/mixin.scss";
+
+.sale {
+  padding-top: 30px;
+  padding-bottom: 68px;
+  position: relative;
+  &__box:hover {
+    .sale__img {
+      transform: scale(1.05);
+    }
+  }
+  &__slider {
+      .splide__pagination{
+          position: absolute;
+          right: 0;
+          top: -65px;
+          bottom: unset;
+          display: flex;
+          width: 84px;
+          right: 62px;
+          left: unset;
+          button{
+              background-color: #f0eeff;
+              width: 9px;
+              height: 9px;
+              &.is-active{
+                  background-color: $violet;
+              }
+          }
+      }
+    .splide__arrows {
+      position: absolute;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      right: 0;
+      top: -60px;
+      button {
+        background-color: #f0eeff;
+        width: 32px;
+        height: 32px;
+        path {
+          fill: $violet;
+        }
+      }
+    }
+    .splide__track {
+      padding-top: 30px;
+    }
+  }
+  &__img {
+    transition: 0.4s;
+    position: relative;
+    height: 336px;
+    border-radius: 14px;
+    @include bg;
+  }
+  &__count {
+    background-color: $orange;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    top: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    position: absolute;
+    padding: 7px 19px;
+  }
+  &__review {
+    color: $orange;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 18px;
+    color: $black;
+  }
+  &__genre {
+    font-size: 14px;
+    color: $violet;
+    margin-bottom: 13px;
+  }
+  &__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__old {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #aaaaaa;
+  }
+  &__new {
+    font-size: 20px;
+    font-weight: 700;
+    color: $black;
+  }
+}
