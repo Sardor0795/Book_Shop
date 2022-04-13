@@ -1,0 +1,219 @@
+@import "../../assets/css/mixin.scss";
+
+.gpro {
+  &__box {
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    position: relative;
+    &:hover {
+      .gpro {
+        &__hide {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__hide {
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__img {
+    position: relative;
+    height: 321px;
+    @include bg;
+    border-radius: 20px;
+  }
+  &__bottom {
+    position: relative;
+  }
+  &__fav {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $violet;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    padding: 17px 0 6px;
+    width: 100%;
+  }
+  &__genre {
+    font-size: 14px;
+    color: $violet;
+    margin-bottom: 13px;
+  }
+  &__review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0px 4px;
+    }
+  }
+  &__old {
+    font-size: 18px;
+    color: #aaa;
+  }
+  &__new {
+    font-size: 24px;
+    font-weight: 700;
+    color: $violet;
+    margin-bottom: 5px;
+  }
+  &__cart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    img {
+      margin-right: 17px;
+    }
+  }
+}
+
+.lprobox {
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 30px;
+  &__img {
+    @include fb(229px);
+    height: 321px;
+    @include bg;
+    border-radius: 20px;
+  }
+  &__right {
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__genre {
+    font-size: 14px;
+    color: $violet;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  &__stars {
+    img {
+      margin-left: 8px;
+    }
+  }
+  &__review {
+    text-align: right;
+    &--value {
+      font-size: 24px;
+      font-weight: 700;
+      color: $black;
+      margin-right: 8px;
+    }
+    &--count {
+      font-size: 14px;
+      color: #aaa;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+  &__newprice {
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 15px;
+    color: $black;
+  }
+  &__oldprice {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: line-through;
+    margin-right: 36px;
+  }
+  &__more,
+  &__promo {
+    border: 1px solid $orange;
+    color: $orange;
+    border-radius: 14px;
+    padding: 8px 14px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    &:hover {
+      background: $orange;
+      color: #fff;
+    }
+  }
+  &__more {
+    background-color: #f0f0f0;
+    border: 0;
+    color: #aaaaaa;
+  }
+  &__bottom {
+    margin-top: auto;
+    .btn {
+      &__bg {
+        width: 229px;
+        margin-left: auto;
+        margin-right: 18px;
+        img{
+            margin-right: 17px;
+        }
+      }
+      &__outline {
+        &:hover {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__name {
+    font-size: 14px;
+    color: #aaaaaa;
+  }
+  &__value {
+    font-size: 18px;
+    font-weight: 600;
+    color: $black;
+  }
+  &__item {
+    margin-right: 30px;
+  }
+}

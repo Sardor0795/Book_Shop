@@ -2,7 +2,7 @@ import React from "react";
 import icon from "../../assets/img/advan1.svg";
 import "./advan.scss";
 
-const Advan = () => {
+const Advan = ({theme}) => {
   let list = [
     {
       title: "Tezkor yetkazib berish",

@@ -30,7 +30,7 @@ const Plslider = () => {
       >
         <SplideSlide>
           <Link
-            to="/"
+            to="/product"
             className="pslider__img"
             style={{ backgroundImage: `url${book}` }}
           >
@@ -42,7 +42,7 @@ const Plslider = () => {
         </SplideSlide>
         <SplideSlide>
           <Link
-            to="/"
+            to="/product"
             className="pslider__img"
             style={{ backgroundImage: `url${book}` }}
           >
@@ -54,7 +54,7 @@ const Plslider = () => {
         </SplideSlide>
         <SplideSlide>
           <Link
-            to="/"
+            to="/product"
             className="pslider__img"
             style={{ backgroundImage: `url${book}` }}
           >
@@ -66,7 +66,7 @@ const Plslider = () => {
         </SplideSlide>
         <SplideSlide>
           <Link
-            to="/"
+            to="/product"
             className="pslider__img"
             style={{ backgroundImage: `url${book}` }}
           >
