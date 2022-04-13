@@ -12,8 +12,7 @@ import user from "../../assets/img/user.svg";
 import down from "../../assets/img/down.svg";
 
 const Header = () => {
-
-  const [catBtn,setCatbtn] = useState(false);
+  const [catBtn, setCatbtn] = useState(false);
 
   return (
     <header className="header">
@@ -26,18 +25,35 @@ const Header = () => {
           </span>
         </Link>
         <div className="header__search">
-          <button className={catBtn?"header__menu btn show":'header__menu btn'} onClick={()=>{setCatbtn(!catBtn)}}>
+          <button
+            className={catBtn ? "header__menu btn show" : "header__menu btn"}
+            onClick={() => {
+              setCatbtn(!catBtn);
+            }}
+          >
             <img src={menu} alt="" />
             <span>Category</span>
             <img src={down} alt="" />
             <ul className="cats">
-              <li><Link to='/'>Roman</Link></li>
-              <li><Link to='/'>Roman</Link></li>
-              <li><Link to='/'>Roman</Link></li>
-              <li><Link to='/'>Roman</Link></li>
-              <li><Link to='/'>Roman</Link></li>
-              <li><Link to='/'>Roman</Link></li>
-          </ul>
+              <li>
+                <Link to="/">Roman</Link>
+              </li>
+              <li>
+                <Link to="/">Roman</Link>
+              </li>
+              <li>
+                <Link to="/">Roman</Link>
+              </li>
+              <li>
+                <Link to="/">Roman</Link>
+              </li>
+              <li>
+                <Link to="/">Roman</Link>
+              </li>
+              <li>
+                <Link to="/">Roman</Link>
+              </li>
+            </ul>
           </button>
           <input type="text" placeholder="Search" className="header__input" />
           <button className="header__find btn">
